@@ -2,28 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
 }
 
-main {
+div.container {
     width: 100vw;
     height: 100vh;
     background-color: #0e244d;
     padding: 1px;
 }
 
+header {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+#logo, nav, ul {
+    display: inline;
+}
+
+#logo img {
+    height: 35px;
+    margin-left: 10px 0px;
+    vertical-align: middle;
+}
+
 section.item {
     width: 30vw;
-    height: calc((100vh - 40px) / 3);
+    height: calc((100vh - 90px) / 3);
     background-size: cover;
     margin: 10px 100px;
     position: relative;
+    top: 50px;
     border: 2px solid #95451d;
     border-radius: 10px;
 
 }
 
 .title h1 {
-    font-family: 'Architects Daughter', cursive;
     font-size: 35px;
     color: white;
     position: absolute;
@@ -45,4 +76,8 @@ section.item {
 section.item:hover h1 {
     text-shadow: 2px 2px 8px lightgrey;
     font-size: 45px;
+}
+
+section.item:hover {
+    border: 2px solid white;
 }
